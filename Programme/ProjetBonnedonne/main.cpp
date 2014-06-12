@@ -12,11 +12,11 @@ int main(int argc, char *argv[])
     Dialog connexion;
     connexion.show();
     QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");
-    db.setUserName("TCoutU");
-    db.setPassword("ini02");
+    db.setUserName("root");
+    db.setPassword("");
     db.setHostName("localhost");
     db.setPort(3306);
-    db.setDatabaseName("TCout");
+    db.setDatabaseName("tcout");
     if(!db.open())
     {
         qDebug("Pas marche");

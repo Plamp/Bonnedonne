@@ -11,27 +11,27 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QComboBox>
-#include <QtGui/QDoubleSpinBox>
-#include <QtGui/QFrame>
-#include <QtGui/QGridLayout>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QMainWindow>
-#include <QtGui/QMenuBar>
-#include <QtGui/QPushButton>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QStackedWidget>
-#include <QtGui/QStatusBar>
-#include <QtGui/QTabWidget>
-#include <QtGui/QTableView>
-#include <QtGui/QTableWidget>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QAction>
+#include <QApplication>
+#include <QButtonGroup>
+#include <QComboBox>
+#include <QDoubleSpinBox>
+#include <QFrame>
+#include <QGridLayout>
+#include <QHBoxLayout>
+#include <QHeaderView>
+#include <QLabel>
+#include <QMainWindow>
+#include <QMenuBar>
+#include <QPushButton>
+#include <QSpacerItem>
+#include <QStackedWidget>
+#include <QStatusBar>
+#include <QTabWidget>
+#include <QTableView>
+#include <QTableWidget>
+#include <QVBoxLayout>
+#include <QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -810,62 +810,62 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "GestCout", 0, QApplication::UnicodeUTF8));
-        label_Titre->setText(QApplication::translate("MainWindow", "Gestcout", 0, QApplication::UnicodeUTF8));
-        pushButtonSwitchPage->setText(QApplication::translate("MainWindow", "Statistique", 0, QApplication::UnicodeUTF8));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "GestCout", 0));
+        label_Titre->setText(QApplication::translate("MainWindow", "Gestcout", 0));
+        pushButtonSwitchPage->setText(QApplication::translate("MainWindow", "Statistique", 0));
         QTableWidgetItem *___qtablewidgetitem = tableWidgetStat->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("MainWindow", "Fournisseur", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem->setText(QApplication::translate("MainWindow", "Fournisseur", 0));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidgetStat->horizontalHeaderItem(1);
-        ___qtablewidgetitem1->setText(QApplication::translate("MainWindow", "nombre de commande", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem1->setText(QApplication::translate("MainWindow", "nombre de commande", 0));
         QTableWidgetItem *___qtablewidgetitem2 = tableWidgetStat->horizontalHeaderItem(2);
-        ___qtablewidgetitem2->setText(QApplication::translate("MainWindow", "Montant total", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem2->setText(QApplication::translate("MainWindow", "Montant total", 0));
         QTableWidgetItem *___qtablewidgetitem3 = tableWidgetStat->horizontalHeaderItem(3);
-        ___qtablewidgetitem3->setText(QApplication::translate("MainWindow", "Action", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("MainWindow", "Choisissez le mois \303\240 \303\251tudier:", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem3->setText(QApplication::translate("MainWindow", "Action", 0));
+        label_2->setText(QApplication::translate("MainWindow", "Choisissez le mois \303\240 \303\251tudier:", 0));
         comboBox_Mois_Statistique->clear();
         comboBox_Mois_Statistique->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "06/12", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("MainWindow", "07/12", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "06/12", 0)
+         << QApplication::translate("MainWindow", "07/12", 0)
         );
-        label->setText(QApplication::translate("MainWindow", "Statistiques mensuelles:", 0, QApplication::UnicodeUTF8));
-        label_test->setText(QApplication::translate("MainWindow", "Nouvelle entr\303\251e :", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("MainWindow", "Fournisseur :", 0, QApplication::UnicodeUTF8));
-        label_13->setText(QApplication::translate("MainWindow", "Type de produit :", 0, QApplication::UnicodeUTF8));
-        label_7->setText(QApplication::translate("MainWindow", "Produit :", 0, QApplication::UnicodeUTF8));
-        label_9->setText(QApplication::translate("MainWindow", "Quantit\303\251 :", 0, QApplication::UnicodeUTF8));
-        pushButton_AjouterProduit->setText(QApplication::translate("MainWindow", "Ajouter", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("MainWindow", "Statistiques mensuelles:", 0));
+        label_test->setText(QApplication::translate("MainWindow", "Nouvelle entr\303\251e :", 0));
+        label_6->setText(QApplication::translate("MainWindow", "Fournisseur :", 0));
+        label_13->setText(QApplication::translate("MainWindow", "Type de produit :", 0));
+        label_7->setText(QApplication::translate("MainWindow", "Produit :", 0));
+        label_9->setText(QApplication::translate("MainWindow", "Quantit\303\251 :", 0));
+        pushButton_AjouterProduit->setText(QApplication::translate("MainWindow", "Ajouter", 0));
         QTableWidgetItem *___qtablewidgetitem4 = tableWidget->horizontalHeaderItem(0);
-        ___qtablewidgetitem4->setText(QApplication::translate("MainWindow", "Fournisseur", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem4->setText(QApplication::translate("MainWindow", "Fournisseur", 0));
         QTableWidgetItem *___qtablewidgetitem5 = tableWidget->horizontalHeaderItem(1);
-        ___qtablewidgetitem5->setText(QApplication::translate("MainWindow", "Produit", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem5->setText(QApplication::translate("MainWindow", "Produit", 0));
         QTableWidgetItem *___qtablewidgetitem6 = tableWidget->horizontalHeaderItem(2);
-        ___qtablewidgetitem6->setText(QApplication::translate("MainWindow", "Quantit\303\251", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem6->setText(QApplication::translate("MainWindow", "Quantit\303\251", 0));
         QTableWidgetItem *___qtablewidgetitem7 = tableWidget->horizontalHeaderItem(3);
-        ___qtablewidgetitem7->setText(QApplication::translate("MainWindow", "PU", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem7->setText(QApplication::translate("MainWindow", "PU", 0));
         QTableWidgetItem *___qtablewidgetitem8 = tableWidget->horizontalHeaderItem(4);
-        ___qtablewidgetitem8->setText(QApplication::translate("MainWindow", "Montant", 0, QApplication::UnicodeUTF8));
-        label_8->setText(QApplication::translate("MainWindow", "Montant total:", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem8->setText(QApplication::translate("MainWindow", "Montant", 0));
+        label_8->setText(QApplication::translate("MainWindow", "Montant total:", 0));
         label_Montant->setText(QString());
-        pushButton_ValiderCommande->setText(QApplication::translate("MainWindow", "Valider", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Entr\303\251e de stock", 0, QApplication::UnicodeUTF8));
-        label_11->setText(QApplication::translate("MainWindow", "Type de produit \303\240 afficher:", 0, QApplication::UnicodeUTF8));
+        pushButton_ValiderCommande->setText(QApplication::translate("MainWindow", "Valider", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Entr\303\251e de stock", 0));
+        label_11->setText(QApplication::translate("MainWindow", "Type de produit \303\240 afficher:", 0 ));
         comboBox_Type_ProduitAfficher->clear();
         comboBox_Type_ProduitAfficher->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Tout afficher", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("MainWindow", "Produit frais", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Tout afficher", 0)
+         << QApplication::translate("MainWindow", "Produit frais", 0)
         );
-        label_10->setText(QApplication::translate("MainWindow", "Stock actuel:", 0, QApplication::UnicodeUTF8));
-        label_12->setText(QApplication::translate("MainWindow", "Modifiez les quantit\303\251s de produits sorties du stock dans le tableau ci-dessus.", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Sortie de stock", 0, QApplication::UnicodeUTF8));
-        label_Detail->setText(QApplication::translate("MainWindow", "Commande effectu\303\251 chez brake Frais durant le mois courant:", 0, QApplication::UnicodeUTF8));
+        label_10->setText(QApplication::translate("MainWindow", "Stock actuel:", 0));
+        label_12->setText(QApplication::translate("MainWindow", "Modifiez les quantit\303\251s de produits sorties du stock dans le tableau ci-dessus.", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Sortie de stock", 0));
+        label_Detail->setText(QApplication::translate("MainWindow", "Commande effectu\303\251 chez brake Frais durant le mois courant:", 0));
         label_4->setText(QString());
-        label_5->setText(QApplication::translate("MainWindow", "Commande effectu\303\251 par :", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("MainWindow", "Commande effectu\303\251 par :", 0));
         comboBox_Detail->clear();
         comboBox_Detail->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Sylvie le 03/01/2014", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("MainWindow", "Lulu le 05/01/2014", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Sylvie le 03/01/2014", 0)
+         << QApplication::translate("MainWindow", "Lulu le 05/01/2014", 0)
         );
-        pushButton->setText(QApplication::translate("MainWindow", "retour", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("MainWindow", "retour",0));
         label_Num_User->setText(QString());
     } // retranslateUi
 

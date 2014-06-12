@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Resource object code
 **
-** Created: Wed Jan 29 10:45:12 2014
+** Created: Tue Jan 28 15:53:23 2014
 **      by: The Resource Compiler for Qt version 4.8.2
 **
 ** WARNING! All changes made in this file will be lost!
@@ -10,7 +10,7 @@
 #include <QtCore/qglobal.h>
 
 static const unsigned char qt_resource_data[] = {
-  // /home/metinan/Document/ProjetBonnedonne/test logo.png
+  // /home/metinan/Document/Back-Office_GestCout/test logo.png
   0x0,0x0,0x3a,0x7b,
   0x89,
   0x50,0x4e,0x47,0xd,0xa,0x1a,0xa,0x0,0x0,0x0,0xd,0x49,0x48,0x44,0x52,0x0,
@@ -987,21 +987,21 @@ extern Q_CORE_EXPORT bool qUnregisterResourceData
 QT_END_NAMESPACE
 
 
-int QT_MANGLE_NAMESPACE(qInitResources_Image)()
+int QT_MANGLE_NAMESPACE(qInitResources_image)()
 {
     QT_PREPEND_NAMESPACE(qRegisterResourceData)
         (0x01, qt_resource_struct, qt_resource_name, qt_resource_data);
     return 1;
 }
 
-Q_CONSTRUCTOR_FUNCTION(QT_MANGLE_NAMESPACE(qInitResources_Image))
+Q_CONSTRUCTOR_FUNCTION(QT_MANGLE_NAMESPACE(qInitResources_image))
 
-int QT_MANGLE_NAMESPACE(qCleanupResources_Image)()
+int QT_MANGLE_NAMESPACE(qCleanupResources_image)()
 {
     QT_PREPEND_NAMESPACE(qUnregisterResourceData)
        (0x01, qt_resource_struct, qt_resource_name, qt_resource_data);
     return 1;
 }
 
-Q_DESTRUCTOR_FUNCTION(QT_MANGLE_NAMESPACE(qCleanupResources_Image))
+Q_DESTRUCTOR_FUNCTION(QT_MANGLE_NAMESPACE(qCleanupResources_image))
 

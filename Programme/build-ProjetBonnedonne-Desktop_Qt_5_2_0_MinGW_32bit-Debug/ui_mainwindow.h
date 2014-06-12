@@ -1,8 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Wed Jan 29 15:43:26 2014
-**      by: Qt User Interface Compiler version 4.8.2
+** Created by: Qt User Interface Compiler version 5.2.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -11,27 +10,27 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QComboBox>
-#include <QtGui/QDoubleSpinBox>
-#include <QtGui/QFrame>
-#include <QtGui/QGridLayout>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QMainWindow>
-#include <QtGui/QMenuBar>
-#include <QtGui/QPushButton>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QStackedWidget>
-#include <QtGui/QStatusBar>
-#include <QtGui/QTabWidget>
-#include <QtGui/QTableView>
-#include <QtGui/QTableWidget>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QDoubleSpinBox>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QStackedWidget>
+#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QTableView>
+#include <QtWidgets/QTableWidget>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -137,7 +136,7 @@ public:
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
+            MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->resize(1028, 552);
         MainWindow->setSizeIncrement(QSize(0, 0));
         QPalette palette;
@@ -198,16 +197,16 @@ public:
         palette.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
         MainWindow->setPalette(palette);
         QIcon icon;
-        icon.addFile(QString::fromUtf8(":/image/Logo"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QStringLiteral(":/image/Logo"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindow->setWindowIcon(icon);
         centralWidget = new QWidget(MainWindow);
-        centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
+        centralWidget->setObjectName(QStringLiteral("centralWidget"));
         gridLayout_6 = new QGridLayout(centralWidget);
         gridLayout_6->setSpacing(6);
         gridLayout_6->setContentsMargins(11, 11, 11, 11);
-        gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
+        gridLayout_6->setObjectName(QStringLiteral("gridLayout_6"));
         label_Titre = new QLabel(centralWidget);
-        label_Titre->setObjectName(QString::fromUtf8("label_Titre"));
+        label_Titre->setObjectName(QStringLiteral("label_Titre"));
         QPalette palette1;
         QBrush brush5(QColor(170, 0, 0, 255));
         brush5.setStyle(Qt::SolidPattern);
@@ -222,7 +221,7 @@ public:
         palette1.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush5);
         label_Titre->setPalette(palette1);
         QFont font;
-        font.setFamily(QString::fromUtf8("Gentium Book Basic"));
+        font.setFamily(QStringLiteral("Gentium Book Basic"));
         font.setPointSize(20);
         font.setBold(true);
         font.setItalic(true);
@@ -233,25 +232,25 @@ public:
         gridLayout_6->addWidget(label_Titre, 0, 2, 1, 1);
 
         pushButtonSwitchPage = new QPushButton(centralWidget);
-        pushButtonSwitchPage->setObjectName(QString::fromUtf8("pushButtonSwitchPage"));
+        pushButtonSwitchPage->setObjectName(QStringLiteral("pushButtonSwitchPage"));
         pushButtonSwitchPage->setMinimumSize(QSize(154, 102));
         pushButtonSwitchPage->setMaximumSize(QSize(154, 102));
 
         gridLayout_6->addWidget(pushButtonSwitchPage, 0, 4, 1, 1);
 
         line = new QFrame(centralWidget);
-        line->setObjectName(QString::fromUtf8("line"));
+        line->setObjectName(QStringLiteral("line"));
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
 
         gridLayout_6->addWidget(line, 2, 0, 1, 5);
 
         frame_Logo = new QFrame(centralWidget);
-        frame_Logo->setObjectName(QString::fromUtf8("frame_Logo"));
+        frame_Logo->setObjectName(QStringLiteral("frame_Logo"));
         frame_Logo->setMinimumSize(QSize(154, 102));
         frame_Logo->setMaximumSize(QSize(154, 102));
         frame_Logo->setAutoFillBackground(false);
-        frame_Logo->setStyleSheet(QString::fromUtf8("QFrame {border-image:url(:/image/Logo)};"));
+        frame_Logo->setStyleSheet(QStringLiteral("QFrame {border-image:url(:/image/Logo)};"));
         frame_Logo->setFrameShape(QFrame::StyledPanel);
         frame_Logo->setFrameShadow(QFrame::Raised);
 
@@ -266,13 +265,13 @@ public:
         gridLayout_6->addItem(horizontalSpacer_3, 0, 3, 1, 1);
 
         stackedWidget = new QStackedWidget(centralWidget);
-        stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
+        stackedWidget->setObjectName(QStringLiteral("stackedWidget"));
         page_Appli = new QWidget();
-        page_Appli->setObjectName(QString::fromUtf8("page_Appli"));
+        page_Appli->setObjectName(QStringLiteral("page_Appli"));
         gridLayout_8 = new QGridLayout(page_Appli);
         gridLayout_8->setSpacing(6);
         gridLayout_8->setContentsMargins(11, 11, 11, 11);
-        gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
+        gridLayout_8->setObjectName(QStringLiteral("gridLayout_8"));
         tableWidgetStat = new QTableWidget(page_Appli);
         if (tableWidgetStat->columnCount() < 4)
             tableWidgetStat->setColumnCount(4);
@@ -284,7 +283,7 @@ public:
         tableWidgetStat->setHorizontalHeaderItem(2, __qtablewidgetitem2);
         QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
         tableWidgetStat->setHorizontalHeaderItem(3, __qtablewidgetitem3);
-        tableWidgetStat->setObjectName(QString::fromUtf8("tableWidgetStat"));
+        tableWidgetStat->setObjectName(QStringLiteral("tableWidgetStat"));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -292,7 +291,7 @@ public:
         tableWidgetStat->setSizePolicy(sizePolicy);
         tableWidgetStat->setMinimumSize(QSize(500, 160));
         tableWidgetStat->setAutoFillBackground(true);
-        tableWidgetStat->setStyleSheet(QString::fromUtf8("QTableWidget { alignment: center;}"));
+        tableWidgetStat->setStyleSheet(QStringLiteral("QTableWidget { alignment: center;}"));
         tableWidgetStat->setAlternatingRowColors(true);
         tableWidgetStat->setSelectionBehavior(QAbstractItemView::SelectRows);
         tableWidgetStat->setShowGrid(false);
@@ -311,24 +310,24 @@ public:
 
         gridLayout_7 = new QGridLayout();
         gridLayout_7->setSpacing(6);
-        gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
+        gridLayout_7->setObjectName(QStringLiteral("gridLayout_7"));
         gridLayout_4 = new QGridLayout();
         gridLayout_4->setSpacing(6);
-        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
+        gridLayout_4->setObjectName(QStringLiteral("gridLayout_4"));
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout_4->addItem(horizontalSpacer_2, 0, 0, 1, 1);
 
         gridLayout_3 = new QGridLayout();
         gridLayout_3->setSpacing(6);
-        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
+        gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
         label_2 = new QLabel(page_Appli);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setObjectName(QStringLiteral("label_2"));
 
         gridLayout_3->addWidget(label_2, 0, 0, 1, 1);
 
         comboBox_Mois_Statistique = new QComboBox(page_Appli);
-        comboBox_Mois_Statistique->setObjectName(QString::fromUtf8("comboBox_Mois_Statistique"));
+        comboBox_Mois_Statistique->setObjectName(QStringLiteral("comboBox_Mois_Statistique"));
 
         gridLayout_3->addWidget(comboBox_Mois_Statistique, 0, 1, 1, 1);
 
@@ -344,10 +343,10 @@ public:
 
         gridLayout_5 = new QGridLayout();
         gridLayout_5->setSpacing(6);
-        gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
+        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(6);
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         horizontalLayout_2->setSizeConstraint(QLayout::SetMinimumSize);
         horizontalLayout_2->setContentsMargins(-1, 0, -1, -1);
         horizontalSpacer_6 = new QSpacerItem(40, 10, QSizePolicy::Expanding, QSizePolicy::Minimum);
@@ -355,7 +354,7 @@ public:
         horizontalLayout_2->addItem(horizontalSpacer_6);
 
         label = new QLabel(page_Appli);
-        label->setObjectName(QString::fromUtf8("label"));
+        label->setObjectName(QStringLiteral("label"));
         label->setMaximumSize(QSize(16777215, 30));
         QFont font1;
         font1.setPointSize(12);
@@ -389,13 +388,13 @@ public:
 
         stackedWidget->addWidget(page_Appli);
         page_Stat = new QWidget();
-        page_Stat->setObjectName(QString::fromUtf8("page_Stat"));
+        page_Stat->setObjectName(QStringLiteral("page_Stat"));
         gridLayout_9 = new QGridLayout(page_Stat);
         gridLayout_9->setSpacing(6);
         gridLayout_9->setContentsMargins(11, 11, 11, 11);
-        gridLayout_9->setObjectName(QString::fromUtf8("gridLayout_9"));
+        gridLayout_9->setObjectName(QStringLiteral("gridLayout_9"));
         tabWidget = new QTabWidget(page_Stat);
-        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
+        tabWidget->setObjectName(QStringLiteral("tabWidget"));
         QPalette palette2;
         palette2.setBrush(QPalette::Active, QPalette::WindowText, brush);
         QBrush brush6(QColor(207, 207, 207, 255));
@@ -452,16 +451,16 @@ public:
         palette2.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
         tabWidget->setPalette(palette2);
         tab = new QWidget();
-        tab->setObjectName(QString::fromUtf8("tab"));
+        tab->setObjectName(QStringLiteral("tab"));
         gridLayout_2 = new QGridLayout(tab);
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
-        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setSpacing(6);
-        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
         comboBox_Num_Produit_Entree = new QComboBox(tab);
-        comboBox_Num_Produit_Entree->setObjectName(QString::fromUtf8("comboBox_Num_Produit_Entree"));
+        comboBox_Num_Produit_Entree->setObjectName(QStringLiteral("comboBox_Num_Produit_Entree"));
 
         horizontalLayout_4->addWidget(comboBox_Num_Produit_Entree);
 
@@ -470,7 +469,7 @@ public:
         horizontalLayout_4->addItem(horizontalSpacer_13);
 
         label_test = new QLabel(tab);
-        label_test->setObjectName(QString::fromUtf8("label_test"));
+        label_test->setObjectName(QStringLiteral("label_test"));
         label_test->setFont(font1);
 
         horizontalLayout_4->addWidget(label_test);
@@ -480,7 +479,7 @@ public:
         horizontalLayout_4->addItem(horizontalSpacer_14);
 
         comboBox_Num_Fourni_Entree = new QComboBox(tab);
-        comboBox_Num_Fourni_Entree->setObjectName(QString::fromUtf8("comboBox_Num_Fourni_Entree"));
+        comboBox_Num_Fourni_Entree->setObjectName(QStringLiteral("comboBox_Num_Fourni_Entree"));
 
         horizontalLayout_4->addWidget(comboBox_Num_Fourni_Entree);
 
@@ -493,26 +492,26 @@ public:
 
         verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setSpacing(6);
-        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setSpacing(6);
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         horizontalLayout_8 = new QHBoxLayout();
         horizontalLayout_8->setSpacing(6);
-        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
+        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
         horizontalLayout_7 = new QHBoxLayout();
         horizontalLayout_7->setSpacing(6);
-        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
+        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
         horizontalLayout_5 = new QHBoxLayout();
         horizontalLayout_5->setSpacing(6);
-        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
+        horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
         label_6 = new QLabel(tab);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setObjectName(QStringLiteral("label_6"));
 
         horizontalLayout_5->addWidget(label_6);
 
         comboBox_Fourni_Commande = new QComboBox(tab);
-        comboBox_Fourni_Commande->setObjectName(QString::fromUtf8("comboBox_Fourni_Commande"));
+        comboBox_Fourni_Commande->setObjectName(QStringLiteral("comboBox_Fourni_Commande"));
         comboBox_Fourni_Commande->setMinimumSize(QSize(200, 0));
         comboBox_Fourni_Commande->setMaxVisibleItems(15);
 
@@ -523,25 +522,25 @@ public:
 
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setSpacing(6);
-        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
+        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
         label_13 = new QLabel(tab);
-        label_13->setObjectName(QString::fromUtf8("label_13"));
+        label_13->setObjectName(QStringLiteral("label_13"));
 
         horizontalLayout_6->addWidget(label_13);
 
         comboBox_Entree_Type = new QComboBox(tab);
-        comboBox_Entree_Type->setObjectName(QString::fromUtf8("comboBox_Entree_Type"));
+        comboBox_Entree_Type->setObjectName(QStringLiteral("comboBox_Entree_Type"));
         comboBox_Entree_Type->setMinimumSize(QSize(120, 0));
 
         horizontalLayout_6->addWidget(comboBox_Entree_Type);
 
         label_7 = new QLabel(tab);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setObjectName(QStringLiteral("label_7"));
 
         horizontalLayout_6->addWidget(label_7);
 
         comboBox_Produit_Commande = new QComboBox(tab);
-        comboBox_Produit_Commande->setObjectName(QString::fromUtf8("comboBox_Produit_Commande"));
+        comboBox_Produit_Commande->setObjectName(QStringLiteral("comboBox_Produit_Commande"));
         comboBox_Produit_Commande->setMinimumSize(QSize(140, 0));
 
         horizontalLayout_6->addWidget(comboBox_Produit_Commande);
@@ -553,12 +552,12 @@ public:
         horizontalLayout_8->addLayout(horizontalLayout_7);
 
         label_9 = new QLabel(tab);
-        label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_9->setObjectName(QStringLiteral("label_9"));
 
         horizontalLayout_8->addWidget(label_9);
 
         doubleSpinBox_Quantit_Commande = new QDoubleSpinBox(tab);
-        doubleSpinBox_Quantit_Commande->setObjectName(QString::fromUtf8("doubleSpinBox_Quantit_Commande"));
+        doubleSpinBox_Quantit_Commande->setObjectName(QStringLiteral("doubleSpinBox_Quantit_Commande"));
 
         horizontalLayout_8->addWidget(doubleSpinBox_Quantit_Commande);
 
@@ -567,7 +566,7 @@ public:
         horizontalLayout_8->addItem(horizontalSpacer_15);
 
         pushButton_AjouterProduit = new QPushButton(tab);
-        pushButton_AjouterProduit->setObjectName(QString::fromUtf8("pushButton_AjouterProduit"));
+        pushButton_AjouterProduit->setObjectName(QStringLiteral("pushButton_AjouterProduit"));
 
         horizontalLayout_8->addWidget(pushButton_AjouterProduit);
 
@@ -587,7 +586,7 @@ public:
         tableWidget->setHorizontalHeaderItem(3, __qtablewidgetitem7);
         QTableWidgetItem *__qtablewidgetitem8 = new QTableWidgetItem();
         tableWidget->setHorizontalHeaderItem(4, __qtablewidgetitem8);
-        tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
+        tableWidget->setObjectName(QStringLiteral("tableWidget"));
         tableWidget->setAlternatingRowColors(true);
         tableWidget->horizontalHeader()->setCascadingSectionResizes(false);
         tableWidget->horizontalHeader()->setProperty("showSortIndicator", QVariant(false));
@@ -600,17 +599,17 @@ public:
 
         horizontalLayout_10 = new QHBoxLayout();
         horizontalLayout_10->setSpacing(6);
-        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
+        horizontalLayout_10->setObjectName(QStringLiteral("horizontalLayout_10"));
         horizontalLayout_9 = new QHBoxLayout();
         horizontalLayout_9->setSpacing(6);
-        horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
+        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
         label_8 = new QLabel(tab);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setObjectName(QStringLiteral("label_8"));
 
         horizontalLayout_9->addWidget(label_8);
 
         label_Montant = new QLabel(tab);
-        label_Montant->setObjectName(QString::fromUtf8("label_Montant"));
+        label_Montant->setObjectName(QStringLiteral("label_Montant"));
 
         horizontalLayout_9->addWidget(label_Montant);
 
@@ -622,7 +621,7 @@ public:
         horizontalLayout_10->addItem(horizontalSpacer_16);
 
         pushButton_ValiderCommande = new QPushButton(tab);
-        pushButton_ValiderCommande->setObjectName(QString::fromUtf8("pushButton_ValiderCommande"));
+        pushButton_ValiderCommande->setObjectName(QStringLiteral("pushButton_ValiderCommande"));
 
         horizontalLayout_10->addWidget(pushButton_ValiderCommande);
 
@@ -634,24 +633,24 @@ public:
 
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
-        tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        tab_2->setObjectName(QStringLiteral("tab_2"));
         gridLayout_10 = new QGridLayout(tab_2);
         gridLayout_10->setSpacing(6);
         gridLayout_10->setContentsMargins(11, 11, 11, 11);
-        gridLayout_10->setObjectName(QString::fromUtf8("gridLayout_10"));
+        gridLayout_10->setObjectName(QStringLiteral("gridLayout_10"));
         horizontalLayout_13 = new QHBoxLayout();
         horizontalLayout_13->setSpacing(6);
-        horizontalLayout_13->setObjectName(QString::fromUtf8("horizontalLayout_13"));
+        horizontalLayout_13->setObjectName(QStringLiteral("horizontalLayout_13"));
         horizontalLayout_12 = new QHBoxLayout();
         horizontalLayout_12->setSpacing(6);
-        horizontalLayout_12->setObjectName(QString::fromUtf8("horizontalLayout_12"));
+        horizontalLayout_12->setObjectName(QStringLiteral("horizontalLayout_12"));
         label_11 = new QLabel(tab_2);
-        label_11->setObjectName(QString::fromUtf8("label_11"));
+        label_11->setObjectName(QStringLiteral("label_11"));
 
         horizontalLayout_12->addWidget(label_11);
 
         comboBox_Type_ProduitAfficher = new QComboBox(tab_2);
-        comboBox_Type_ProduitAfficher->setObjectName(QString::fromUtf8("comboBox_Type_ProduitAfficher"));
+        comboBox_Type_ProduitAfficher->setObjectName(QStringLiteral("comboBox_Type_ProduitAfficher"));
 
         horizontalLayout_12->addWidget(comboBox_Type_ProduitAfficher);
 
@@ -667,13 +666,13 @@ public:
 
         horizontalLayout_11 = new QHBoxLayout();
         horizontalLayout_11->setSpacing(6);
-        horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
+        horizontalLayout_11->setObjectName(QStringLiteral("horizontalLayout_11"));
         horizontalSpacer_17 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_11->addItem(horizontalSpacer_17);
 
         label_10 = new QLabel(tab_2);
-        label_10->setObjectName(QString::fromUtf8("label_10"));
+        label_10->setObjectName(QStringLiteral("label_10"));
         label_10->setFont(font1);
 
         horizontalLayout_11->addWidget(label_10);
@@ -686,7 +685,7 @@ public:
         gridLayout_10->addLayout(horizontalLayout_11, 0, 0, 1, 1);
 
         tableView_Stock = new QTableView(tab_2);
-        tableView_Stock->setObjectName(QString::fromUtf8("tableView_Stock"));
+        tableView_Stock->setObjectName(QStringLiteral("tableView_Stock"));
 
         gridLayout_10->addWidget(tableView_Stock, 3, 0, 1, 1);
 
@@ -695,7 +694,7 @@ public:
         gridLayout_10->addItem(verticalSpacer_4, 1, 1, 1, 1);
 
         label_12 = new QLabel(tab_2);
-        label_12->setObjectName(QString::fromUtf8("label_12"));
+        label_12->setObjectName(QStringLiteral("label_12"));
 
         gridLayout_10->addWidget(label_12, 4, 0, 1, 1);
 
@@ -705,17 +704,17 @@ public:
 
         stackedWidget->addWidget(page_Stat);
         page_Details = new QWidget();
-        page_Details->setObjectName(QString::fromUtf8("page_Details"));
+        page_Details->setObjectName(QStringLiteral("page_Details"));
         gridLayout = new QGridLayout(page_Details);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
         horizontalSpacer_9 = new QSpacerItem(185, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout->addItem(horizontalSpacer_9, 0, 0, 1, 1);
 
         label_Detail = new QLabel(page_Details);
-        label_Detail->setObjectName(QString::fromUtf8("label_Detail"));
+        label_Detail->setObjectName(QStringLiteral("label_Detail"));
         QFont font2;
         font2.setPointSize(14);
         label_Detail->setFont(font2);
@@ -731,20 +730,20 @@ public:
         gridLayout->addItem(verticalSpacer_2, 1, 2, 1, 1);
 
         label_4 = new QLabel(page_Details);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setObjectName(QStringLiteral("label_4"));
 
         gridLayout->addWidget(label_4, 2, 1, 1, 1);
 
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setSpacing(6);
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
         label_5 = new QLabel(page_Details);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setObjectName(QStringLiteral("label_5"));
 
         horizontalLayout_3->addWidget(label_5);
 
         comboBox_Detail = new QComboBox(page_Details);
-        comboBox_Detail->setObjectName(QString::fromUtf8("comboBox_Detail"));
+        comboBox_Detail->setObjectName(QStringLiteral("comboBox_Detail"));
 
         horizontalLayout_3->addWidget(comboBox_Detail);
 
@@ -753,21 +752,21 @@ public:
 
         verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(6);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         tableView = new QTableView(page_Details);
-        tableView->setObjectName(QString::fromUtf8("tableView"));
+        tableView->setObjectName(QStringLiteral("tableView"));
 
         verticalLayout->addWidget(tableView);
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalSpacer_11 = new QSpacerItem(140, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout->addItem(horizontalSpacer_11);
 
         pushButton = new QPushButton(page_Details);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setObjectName(QStringLiteral("pushButton"));
 
         horizontalLayout->addWidget(pushButton);
 
@@ -786,17 +785,17 @@ public:
         gridLayout_6->addWidget(stackedWidget, 3, 0, 1, 5);
 
         label_Num_User = new QLabel(centralWidget);
-        label_Num_User->setObjectName(QString::fromUtf8("label_Num_User"));
+        label_Num_User->setObjectName(QStringLiteral("label_Num_User"));
 
         gridLayout_6->addWidget(label_Num_User, 1, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
-        menuBar->setObjectName(QString::fromUtf8("menuBar"));
+        menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 1028, 22));
         MainWindow->setMenuBar(menuBar);
         statusBar = new QStatusBar(MainWindow);
-        statusBar->setObjectName(QString::fromUtf8("statusBar"));
+        statusBar->setObjectName(QStringLiteral("statusBar"));
         MainWindow->setStatusBar(statusBar);
 
         retranslateUi(MainWindow);
@@ -810,62 +809,62 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "GestCout", 0, QApplication::UnicodeUTF8));
-        label_Titre->setText(QApplication::translate("MainWindow", "Gestcout", 0, QApplication::UnicodeUTF8));
-        pushButtonSwitchPage->setText(QApplication::translate("MainWindow", "Statistique", 0, QApplication::UnicodeUTF8));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "GestCout", 0));
+        label_Titre->setText(QApplication::translate("MainWindow", "Gestcout", 0));
+        pushButtonSwitchPage->setText(QApplication::translate("MainWindow", "Statistique", 0));
         QTableWidgetItem *___qtablewidgetitem = tableWidgetStat->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("MainWindow", "Fournisseur", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem->setText(QApplication::translate("MainWindow", "Fournisseur", 0));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidgetStat->horizontalHeaderItem(1);
-        ___qtablewidgetitem1->setText(QApplication::translate("MainWindow", "nombre de commande", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem1->setText(QApplication::translate("MainWindow", "nombre de commande", 0));
         QTableWidgetItem *___qtablewidgetitem2 = tableWidgetStat->horizontalHeaderItem(2);
-        ___qtablewidgetitem2->setText(QApplication::translate("MainWindow", "Montant total", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem2->setText(QApplication::translate("MainWindow", "Montant total", 0));
         QTableWidgetItem *___qtablewidgetitem3 = tableWidgetStat->horizontalHeaderItem(3);
-        ___qtablewidgetitem3->setText(QApplication::translate("MainWindow", "Action", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("MainWindow", "Choisissez le mois \303\240 \303\251tudier:", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem3->setText(QApplication::translate("MainWindow", "Action", 0));
+        label_2->setText(QApplication::translate("MainWindow", "Choisissez le mois \303\240 \303\251tudier:", 0));
         comboBox_Mois_Statistique->clear();
         comboBox_Mois_Statistique->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "06/12", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("MainWindow", "07/12", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "06/12", 0)
+         << QApplication::translate("MainWindow", "07/12", 0)
         );
-        label->setText(QApplication::translate("MainWindow", "Statistiques mensuelles:", 0, QApplication::UnicodeUTF8));
-        label_test->setText(QApplication::translate("MainWindow", "Nouvelle entr\303\251e :", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("MainWindow", "Fournisseur :", 0, QApplication::UnicodeUTF8));
-        label_13->setText(QApplication::translate("MainWindow", "Type de produit :", 0, QApplication::UnicodeUTF8));
-        label_7->setText(QApplication::translate("MainWindow", "Produit :", 0, QApplication::UnicodeUTF8));
-        label_9->setText(QApplication::translate("MainWindow", "Quantit\303\251 :", 0, QApplication::UnicodeUTF8));
-        pushButton_AjouterProduit->setText(QApplication::translate("MainWindow", "Ajouter", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("MainWindow", "Statistiques mensuelles:", 0));
+        label_test->setText(QApplication::translate("MainWindow", "Nouvelle entr\303\251e :", 0));
+        label_6->setText(QApplication::translate("MainWindow", "Fournisseur :", 0));
+        label_13->setText(QApplication::translate("MainWindow", "Type de produit :", 0));
+        label_7->setText(QApplication::translate("MainWindow", "Produit :", 0));
+        label_9->setText(QApplication::translate("MainWindow", "Quantit\303\251 :", 0));
+        pushButton_AjouterProduit->setText(QApplication::translate("MainWindow", "Ajouter", 0));
         QTableWidgetItem *___qtablewidgetitem4 = tableWidget->horizontalHeaderItem(0);
-        ___qtablewidgetitem4->setText(QApplication::translate("MainWindow", "Fournisseur", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem4->setText(QApplication::translate("MainWindow", "Fournisseur", 0));
         QTableWidgetItem *___qtablewidgetitem5 = tableWidget->horizontalHeaderItem(1);
-        ___qtablewidgetitem5->setText(QApplication::translate("MainWindow", "Produit", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem5->setText(QApplication::translate("MainWindow", "Produit", 0));
         QTableWidgetItem *___qtablewidgetitem6 = tableWidget->horizontalHeaderItem(2);
-        ___qtablewidgetitem6->setText(QApplication::translate("MainWindow", "Quantit\303\251", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem6->setText(QApplication::translate("MainWindow", "Quantit\303\251", 0));
         QTableWidgetItem *___qtablewidgetitem7 = tableWidget->horizontalHeaderItem(3);
-        ___qtablewidgetitem7->setText(QApplication::translate("MainWindow", "PU", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem7->setText(QApplication::translate("MainWindow", "PU", 0));
         QTableWidgetItem *___qtablewidgetitem8 = tableWidget->horizontalHeaderItem(4);
-        ___qtablewidgetitem8->setText(QApplication::translate("MainWindow", "Montant", 0, QApplication::UnicodeUTF8));
-        label_8->setText(QApplication::translate("MainWindow", "Montant total:", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem8->setText(QApplication::translate("MainWindow", "Montant", 0));
+        label_8->setText(QApplication::translate("MainWindow", "Montant total:", 0));
         label_Montant->setText(QString());
-        pushButton_ValiderCommande->setText(QApplication::translate("MainWindow", "Valider", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Entr\303\251e de stock", 0, QApplication::UnicodeUTF8));
-        label_11->setText(QApplication::translate("MainWindow", "Type de produit \303\240 afficher:", 0, QApplication::UnicodeUTF8));
+        pushButton_ValiderCommande->setText(QApplication::translate("MainWindow", "Valider", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Entr\303\251e de stock", 0));
+        label_11->setText(QApplication::translate("MainWindow", "Type de produit \303\240 afficher:", 0));
         comboBox_Type_ProduitAfficher->clear();
         comboBox_Type_ProduitAfficher->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Tout afficher", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("MainWindow", "Produit frais", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Tout afficher", 0)
+         << QApplication::translate("MainWindow", "Produit frais", 0)
         );
-        label_10->setText(QApplication::translate("MainWindow", "Stock actuel:", 0, QApplication::UnicodeUTF8));
-        label_12->setText(QApplication::translate("MainWindow", "Modifiez les quantit\303\251s de produits sorties du stock dans le tableau ci-dessus.", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Sortie de stock", 0, QApplication::UnicodeUTF8));
-        label_Detail->setText(QApplication::translate("MainWindow", "Commande effectu\303\251 chez brake Frais durant le mois courant:", 0, QApplication::UnicodeUTF8));
+        label_10->setText(QApplication::translate("MainWindow", "Stock actuel:", 0));
+        label_12->setText(QApplication::translate("MainWindow", "Modifiez les quantit\303\251s de produits sorties du stock dans le tableau ci-dessus.", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Sortie de stock", 0));
+        label_Detail->setText(QApplication::translate("MainWindow", "Commande effectu\303\251 chez brake Frais durant le mois courant:", 0));
         label_4->setText(QString());
-        label_5->setText(QApplication::translate("MainWindow", "Commande effectu\303\251 par :", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("MainWindow", "Commande effectu\303\251 par :", 0));
         comboBox_Detail->clear();
         comboBox_Detail->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Sylvie le 03/01/2014", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("MainWindow", "Lulu le 05/01/2014", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Sylvie le 03/01/2014", 0)
+         << QApplication::translate("MainWindow", "Lulu le 05/01/2014", 0)
         );
-        pushButton->setText(QApplication::translate("MainWindow", "retour", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("MainWindow", "retour", 0));
         label_Num_User->setText(QString());
     } // retranslateUi
 

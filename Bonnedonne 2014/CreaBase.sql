@@ -1,4 +1,6 @@
 -- Creation de la base de donnée TCout , du PGI "Talcan-GestCout" permettant de gerer les commandes de produits et leurs utilisations.
+Create user TCoutU identified by "ini02";
+Grant all on *.* to TCoutU;
 drop database if exists TCout;
 create database TCout;
 use TCout;
@@ -11,7 +13,8 @@ ville_Fourni varchar(60) ,
 rue_Fourni varchar(200) ,
 cp_Fourni varchar(5) ,
 courriel_Fourni varchar(70),
-active bool default true; 
+fax_Fourni varchar(10),
+active bool default true 
 )engine=innodb;
 
 -- Création de la table TypeProduit:
@@ -39,12 +42,22 @@ foreign key(num_Fourni) REFERENCES Fournisseur(num_Fourni),
 foreign key(type_Produit) REFERENCES TypeProduit(num_TypeProduit)
 )engine=innodb;
 
+-- Création de la table User :
+
+create table Utilisateur(
+num_User tinyint primary key,
+nom_User varchar(20),
+login varchar(20) ,
+password varchar(20)
+)engine=innodb;
 -- Création de la table Entree:
 
 Create table Entree(
 num_Entree integer primary key,
 date_Entree date,
+num_user tinyint,
 num_Fourni smallint,
+foreign key(num_User) references Utilisateur(num_User),
 foreign key(num_Fourni) references Fournisseur(num_Fourni)
 )engine=innodb;
 
@@ -58,3 +71,5 @@ primary key(num_Entree,num_Produit),
 foreign key(num_Entree) references Entree(num_Entree),
 foreign key(num_Produit) references Produit(num_Produit)
 )engine=innodb;
+
+

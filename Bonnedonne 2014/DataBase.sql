@@ -1,7 +1,7 @@
 -- insertion des données de la base "TCout"
 
 -- Insertion dans la relation Fournisseur .
-
+delete from fournisseur ;
 insert into Fournisseur(num_Fourni,nom_Fourni,tel_fourni,ville_Fourni,rue_Fourni,cp_Fourni)
 values(01,"Boulangerie Villard","0492490068","Saint Bonnet en Champsaur","23 rue de Chaillol","05500");
 
@@ -39,9 +39,12 @@ insert into TypeProduit(num_TypeProduit,lib_TypeProduit) values (03,"Surgelés")
 
 insert into TypeProduit(num_TypeProduit,lib_TypeProduit) values (04,"Fruits et légumes");
 
+-- Insertion dans la relation Utilisateur
 
-
--- Insertion dans la relation Produit .
-
-insert into Produit (num_Fourni,num_Produit,ref_Produit,nom_Produit,pu_Produit,um_Produit,type_Produit) values(10,04,"B124266D","Talcanard",72.5,"pièce",03) ;
-
+insert into Utilisateur(num_User,nom_User,login,password) values (01,"Remy.V","VINCERE","ini01");
+insert into Utilisateur(num_User,nom_User,login,password) values (02,"Angeline.G","GUILLAN","ini01");
+insert into Utilisateur(num_User,nom_User,login,password) values (03,"Emmanuelle.N","NIOLLEM","ini01");
+insert into Utilisateur(num_User,nom_User,login,password) values (04,"Christophe.A","ACCARCH","ini01");
+insert into Utilisateur(num_User,nom_User,login,password) values (05,"Secours","SECOUHE","ini01");
+insert into Utilisateur(num_User,nom_User,login,password) values (06,"Maryline.L","LAMPSMA","ini01");
+produitnum_Fourni
